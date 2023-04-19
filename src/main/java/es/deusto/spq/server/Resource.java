@@ -26,7 +26,7 @@ import org.apache.logging.log4j.Logger;
 
 
 @Path("/resource")
-@Produces(MediaType.APPLICATION_JSON
+@Produces(MediaType.APPLICATION_JSON)
 public class Resource {
 
 	private static final Logger logger = LogManager.getLogger(Resource.class);
