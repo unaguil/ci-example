@@ -46,7 +46,7 @@ public class Message {
     }
 
     public String getText() {
-        return text + "-";
+        return text;
     }
 
     public void setText(String text) {
