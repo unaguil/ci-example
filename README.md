@@ -1,3 +1,5 @@
+![example workflow](https://github.com/unaguil/ci-example/actions/workflows/gradle.yml/badge.svg)
+
 SpringBoot + REST + MySQL (Multimodule)
 =====================================
 
