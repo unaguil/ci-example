@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'io.spring.dependency-management' version '1.1.0' apply false
     id 'org.springframework.boot' version '3.4.4' apply false
+    id "org.sonarqube" version "7.2.3.7755"
 }
 
 allprojects {
@@ -73,4 +74,11 @@ subprojects {
             })
         }
     }
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "unaguil_ci-example"
+    property "sonar.organization", "unaguil"
+  }
 }
