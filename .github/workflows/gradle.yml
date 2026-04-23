@@ -26,6 +26,13 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
+    - name: Cache SonarQube packages
+      uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
+
     - name: Build with Gradle Wrapper
       env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
